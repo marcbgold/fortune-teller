@@ -36,6 +36,7 @@ public class FortuneTeller {
 		}
 
 		// get age
+		// didn't error check for entering decimals, that will throw an exception
 
 		System.out.println("OK, now I need your age.");
 		String ageString = input.next().trim();
