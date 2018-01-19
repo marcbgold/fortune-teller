@@ -53,7 +53,7 @@ public class FortuneTeller {
 		System.out.println("(e.g. for January, type 1, for February, type 2, etc.)");
 		String monthString = input.next().trim();
 		System.out.println();
-		if (firstName.equalsIgnoreCase("quit")) {
+		if (monthString.equalsIgnoreCase("quit")) {
 			System.out.println("Fine.  Be that way.  Nobody likes a quitter, though.");
 			System.out.println("May a thousand angry camels spit in your face.");
 			System.exit(0);
@@ -62,11 +62,11 @@ public class FortuneTeller {
 
 		// get favorite color
 
+		String color = "";
 		while (true) {
-
 			System.out.println("So, what's your favorite ROYGBIV color?");
 			System.out.println("Type \"help\" if you never learned what ROYGBIV means when you were in grade school.");
-			String color = input.next().trim();
+			color = input.next().trim();
 			System.out.println();
 			if (color.equalsIgnoreCase("quit")) {
 				System.out.println("Fine.  Be that way.  Nobody likes a quitter, though.");
@@ -76,25 +76,26 @@ public class FortuneTeller {
 				System.out.println("The ROYGBIV colors are red, orange, yellow, green, blue, indigo, violet.");
 				System.out.println("Pick one of those.");
 				System.out.println();
-			} else break;
+			} else
+				break;
 		}
-		
-		//get number of siblings
-		
+
+		// get number of siblings
+
 		System.out.println("Last one.  Tell me how many siblings you have.  Type it as a number, thanks.");
 		String siblingsString = input.next().trim();
 		System.out.println();
-		if (ageString.equalsIgnoreCase("quit")) {
+		if (siblingsString.equalsIgnoreCase("quit")) {
 			System.out.println("Fine.  Be that way.  Nobody likes a quitter, though.");
 			System.out.println("May a thousand angry camels spit in your face.");
 			System.exit(0);
 		}
 		int siblings = Integer.parseInt(siblingsString);
+
+		// parse input and assign to output variables
+
 		
-		//parse input and assign to output variables
-		
-		
-		
+
 		input.close();
 
 	}
