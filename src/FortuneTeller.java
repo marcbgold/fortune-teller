@@ -92,10 +92,34 @@ public class FortuneTeller {
 		}
 		int siblings = Integer.parseInt(siblingsString);
 
-		// parse input and assign to output variables
+		//parse input and assign to output variables
 
+		//get age fortune
 		
+		String ageFortune = "";
+		if (age % 2 == 0) {
+			ageFortune = "2 years";
+		} else {
+			ageFortune = "42 years"; 
+		}
 
+		//get birth month fortune
+		
+		String monthFortune = "";
+		if (month >= 1 && month <= 4) {
+			monthFortune = "$270,832.00";
+		} else if (month >= 5 && month <= 8) {
+			monthFortune = "$60,985.40";
+		} else if (month >= 9 && month <= 12) {
+			monthFortune = "$100,000,000.00";
+		} else {
+			monthFortune = "$3.14";
+		}
+		
+		
+		
+		
+		
 		input.close();
 
 	}
