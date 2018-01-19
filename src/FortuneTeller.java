@@ -171,7 +171,7 @@ public class FortuneTeller {
 		System.out.print(firstName + " " + lastName + " will retire in " + numOfYears + " with " + bankBalance + " in the bank and ");
 		System.out.println("a vacation home in " + location + ", and will travel by " + modeOfTransport + ".");
 		System.out.println();
-		System.out.println("Want another fortune?  Run me again.  Otherwise, go away.  I have other things to do.");
+		System.out.println("Want another fortune?  Run me again.  Otherwise, go away.  I have better things to do.");
 				
 		input.close();
 
