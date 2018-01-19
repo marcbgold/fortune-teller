@@ -92,34 +92,86 @@ public class FortuneTeller {
 		}
 		int siblings = Integer.parseInt(siblingsString);
 
-		//parse input and assign to output variables
+		// parse input and assign to output variables
 
-		//get age fortune
-		
-		String ageFortune = "";
+		// get age fortune
+
+		String numOfYears = "";
 		if (age % 2 == 0) {
-			ageFortune = "2 years";
+			numOfYears = "2 years";
 		} else {
-			ageFortune = "42 years"; 
+			numOfYears = "42 years";
 		}
 
-		//get birth month fortune
-		
-		String monthFortune = "";
+		// get birth month fortune
+
+		String bankBalance = "";
 		if (month >= 1 && month <= 4) {
-			monthFortune = "$270,832.00";
+			bankBalance = "$270,832.00";
 		} else if (month >= 5 && month <= 8) {
-			monthFortune = "$60,985.40";
+			bankBalance = "$60,985.40";
 		} else if (month >= 9 && month <= 12) {
-			monthFortune = "$100,000,000.00";
+			bankBalance = "$100,000,000.00";
 		} else {
-			monthFortune = "$3.14";
+			bankBalance = "$3.14";
 		}
+
+		// get color fortune
+
+		String modeOfTransport = "";
+		switch (color.toLowerCase()) {
+		case "red":
+			modeOfTransport = "elephant";
+			break;
+		case "orange":
+			modeOfTransport = "blimp";
+			break;
+		case "yellow":
+			modeOfTransport = "busted old pickup truck";
+			break;
+		case "green":
+			modeOfTransport = "F-15";
+			break;
+		case "blue":
+			modeOfTransport = "spaceship";
+			break;
+		case "indigo":
+			modeOfTransport = "bobsled";
+			break;
+		case "violet":
+			modeOfTransport = "teleportation";
+			break;
+		default:
+			modeOfTransport = "being dragged through the mud by a donkey";
+			break;
+		}
+
+		// get number of siblings fortune
+
+		String location = "";
+		if (siblings < 0) {
+			location = "an active volcano";
+		} else if (siblings == 0) {
+			location = "Tokyo, Japan";
+		} else if (siblings == 1) {
+			location = "Paris, France";
+		} else if (siblings == 2) {
+			location = "Sydney, Australia";
+		} else if (siblings == 3) {
+			location = "Miami Beach, FL";
+		} else {
+			location = "a colony on the Moon";
+		}
+
+		// print fortune
 		
-		
-		
-		
-		
+		System.out.println("OK, I've got it.  Here's your fortune:");
+		System.out.println();
+		System.out.print(firstName + " " + lastName + " will retire in " + numOfYears + " with " + bankBalance + " in the bank and ");
+		System.out.println("a vacation home in " + location + ", and will travel by " + modeOfTransport + ".");
+		System.out.println();
+		System.out.println("Want another fortune?  Run me again.  Otherwise, go away.  I have other things to do.");
+				
 		input.close();
 
 	}
