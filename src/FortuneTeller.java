@@ -16,7 +16,7 @@ public class FortuneTeller {
 		// get first name
 
 		System.out.println("To start with, give me your first name.");
-		String firstName = input.next().trim();
+		String firstName = input.nextLine().trim();
 		System.out.println();
 		if (firstName.equalsIgnoreCase("quit")) {
 			System.out.println("Fine.  Be that way.  Nobody likes a quitter, though.");
@@ -27,7 +27,7 @@ public class FortuneTeller {
 		// get last name
 
 		System.out.println("Next, tell me your last name.");
-		String lastName = input.next().trim();
+		String lastName = input.nextLine().trim();
 		System.out.println();
 		if (lastName.equalsIgnoreCase("quit")) {
 			System.out.println("Fine.  Be that way.  Nobody likes a quitter, though.");
